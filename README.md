@@ -8,7 +8,7 @@
 
 ### Documents
 
-[Game Design](<LINK TO GDD HERE>)
+[Game Design](<https://docs.google.com/document/d/1c7rzvjcPftg2-DRkINb46bQuE8vqqljLOWVe_5XHIaw/edit?usp=sharing>)
 
 [Technical Design](<LINK TO TDD HERE>)
 
