@@ -9,11 +9,18 @@ public class CharacterAnimationsDrug : MonoBehaviour
     
     protected Animator _animator;
     protected CharacterMovementBaseDrug _characterMovement;
-    
+    protected PlayerControllerDrug _playerController;
+    protected GameObject _hatchet { get; private set; }
+
+    [SerializeField] private Collider _hatchetCollider;
+
     protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
-        _characterMovement = GetComponentInParent<CharacterMovementBaseDrug>();
+        _characterMovement = GetComponent<CharacterMovementBaseDrug>();
+        _playerController = GetComponent<PlayerControllerDrug>();
+        _hatchet = _playerController._hatchet;
+        _hatchetCollider = _hatchet.GetComponent<Collider>();
     }
     
     protected virtual void Update()
@@ -28,8 +35,17 @@ public class CharacterAnimationsDrug : MonoBehaviour
         // send isolated y-velocity
         _animator.SetFloat("VerticalVelocity", velocity.y);
     }
+    //Anim Events
+    void OnAnimationStart()
+    {
+        //Debug.Log("anim start");
+        //_animator.applyRootMotion = true;
+        //_characterMovement.CanMove = false;
+    }
+    //Anim Events
     void OnAnimationEnd()
     {
+        Debug.Log("anim end");
         _animator.applyRootMotion = false;
         _characterMovement.CanMove = true;
     }

@@ -12,10 +12,11 @@ public class PlayerControllerDrug : MonoBehaviour
     [SerializeField] protected CursorLockMode _cursorMode = CursorLockMode.Locked;
     // make character look in Camera direction instead of MoveDirection
     [SerializeField] protected bool _lookInCameraDirection;
-
+    public GameObject _hatchet;
     protected CharacterMovementBaseDrug _characterMovement;
     protected Vector2 _moveInput;
     private Animator _animator;
+
 
     protected virtual void Awake()
     {
@@ -36,12 +37,23 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnFire(InputValue value)
     {
-        // placeholder for shooting stuff
         _characterMovement.CanMove = false;
         _animator.applyRootMotion = true;
-        _animator.SetTrigger("Attack");
-        
+        //_hatchet.GetComponent<Collider>().isTrigger = true;
+        _animator.SetTrigger("Attack");        
     }
+
+    void HitStart()
+    {
+        _hatchet.GetComponent<Hatchet>().ToggleTrigger();
+        Debug.Log("start" + _hatchet.GetComponent<Collider>().isTrigger);
+    }
+    void HitStop()
+    {
+        _hatchet.GetComponent<Hatchet>().ToggleTrigger();
+        Debug.Log("start" + _hatchet.GetComponent<Collider>().isTrigger);
+    }
+
     public virtual void OnSlide(InputValue value)
     {
         _animator.SetTrigger("IsSliding");
