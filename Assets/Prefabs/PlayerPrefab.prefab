@@ -17,11 +17,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 269930521, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_VersionIndex
-      value: 17
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 269930523, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 412233917619782477, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0007864619
+      objectReference: {fileID: 0}
+    - target: {fileID: 412233917619782477, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.079668
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362208, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_Name

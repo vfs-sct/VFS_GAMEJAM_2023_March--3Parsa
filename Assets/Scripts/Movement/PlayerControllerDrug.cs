@@ -35,6 +35,17 @@ public class PlayerControllerDrug : MonoBehaviour
         _characterMovement?.Jump();
     }
 
+    public virtual void OnSprintStart()
+    {
+        Debug.Log("SprintStart");
+        _characterMovement?.StartSprint();
+    }
+    public virtual void OnSprintStop()
+    {
+        Debug.Log("SprintStop");
+        _characterMovement?.StopSprint();
+    }
+
     public virtual void OnFire(InputValue value)
     {
         _characterMovement.CanMove = false;

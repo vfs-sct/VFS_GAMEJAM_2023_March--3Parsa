@@ -27,6 +27,7 @@ namespace CharacterMovement
 
         protected virtual void Awake()
         {
+            Speed = _walkSpeed;
             _rigidbody = GetComponent<Rigidbody>();
             Collider collider = GetComponent<Collider>();
             PhysicMaterial noFriction = new PhysicMaterial("NoFriction")
@@ -77,11 +78,20 @@ namespace CharacterMovement
             LookDirection = new Vector3(direction.x, 0f, direction.z).normalized;
         }
 
+        public override void StartSprint()
+        {
+            MoveSpeedMultiplier = 2f;
+        }
+
+        public override void StopSprint()
+        {
+            MoveSpeedMultiplier = 1f;
+        }
         public override void Slide()
         {
-            Debug.Log("Sliding");
-            _dashDirection = transform.forward * _dashSpeed * _dashSpeedMultiplier;
-            _rigidbody.AddForce(_dashDirection);
+            if(!IsGrounded && !canAirDash)  return;
+            _dashDirection = MoveInput * _dashSpeed * _dashSpeedMultiplier;
+            //_rigidbody.AddForce(_dashDirection);
         }
 
         // attempts a jump, will fail if not grounded
@@ -136,7 +146,7 @@ namespace CharacterMovement
             Vector3 forward = Vector3.Cross(right, GroundNormal);
 
             // calculates desirection movement velocity
-            Vector3 targetVelocity = forward * (_speed * MoveSpeedMultiplier);
+            Vector3 targetVelocity = forward * (_walkSpeed * MoveSpeedMultiplier);
             if (!CanMove) targetVelocity = Vector3.zero;
             // adds velocity of surface under character, if character is stationary
             targetVelocity += SurfaceVelocity * (1f - Mathf.Abs(MoveInput.magnitude));

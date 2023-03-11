@@ -89,7 +89,7 @@ using UnityEngine;
             if (_topDownMovement) forward = new Vector3(MoveInput.x, MoveInput.z, 0f);
 
             // calculates desirection movement velocity
-            Vector3 targetVelocity = forward * (_speed * MoveSpeedMultiplier);
+            Vector3 targetVelocity = forward * (_walkSpeed * MoveSpeedMultiplier);
             if (!CanMove) targetVelocity = Vector3.zero;
             // adds velocity of surface under character, if character is stationary
             targetVelocity += SurfaceVelocity * (1f - Mathf.Abs(MoveInput.magnitude));
