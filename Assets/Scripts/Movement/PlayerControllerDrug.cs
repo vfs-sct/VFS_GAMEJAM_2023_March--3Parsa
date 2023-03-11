@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 
 // sends input from PlayerInput to attached CharacterMovement components
 public class PlayerControllerDrug : MonoBehaviour
 {
+    public UnityEvent OnDeath;
     // initial cursor state
     [SerializeField] protected CursorLockMode _cursorMode = CursorLockMode.Locked;
     // make character look in Camera direction instead of MoveDirection
@@ -16,7 +18,7 @@ public class PlayerControllerDrug : MonoBehaviour
     protected CharacterMovementBaseDrug _characterMovement;
     protected Vector2 _moveInput;
     private Animator _animator;
-
+    public bool IsAlive = true;
 
     protected virtual void Awake()
     {
@@ -32,7 +34,7 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnJump(InputValue value)
     {
-        _characterMovement?.Jump();
+        _characterMovement?.TryJump();
     }
 
     public virtual void OnSprintStart()

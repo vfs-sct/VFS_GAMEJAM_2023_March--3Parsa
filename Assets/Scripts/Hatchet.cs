@@ -18,8 +18,11 @@ public class Hatchet : MonoBehaviour
 
     private void DamageEnemy(GameObject other)
     {
+        EnemyController enemyController = other.GetComponent<EnemyController>();
         Debug.Log("Killed enemy");
-        other.SetActive(false);
+        enemyController.IsAlive = false;
+        other.GetComponent<Animator>().SetBool("IsAlive", enemyController.IsAlive);
+        enemyController.OnDeath.Invoke();
     }
 
     public void ToggleTrigger()

@@ -12,6 +12,7 @@ namespace CharacterMovement
     [RequireComponent(typeof(NavMeshAgent))]
     public class CharacterMovement3DDrug : CharacterMovementBaseDrug
     {
+
         // public-read private-set properties
         public override Vector3 Velocity { get => _rigidbody.velocity; protected set => _rigidbody.velocity = value; }
 
@@ -91,17 +92,24 @@ namespace CharacterMovement
         {
             if(!IsGrounded && !canAirDash)  return;
             _dashDirection = MoveInput * _dashSpeed * _dashSpeedMultiplier;
-            //_rigidbody.AddForce(_dashDirection);
+            _rigidbody.AddForce(_dashDirection);
         }
-
+        public override void TryJump()
+        {
+            if (IsGrounded || jumpCounter < _maxJumps) Jump();
+            else Debug.Log(jumpCounter + "too many jumps");
+        }
         // attempts a jump, will fail if not grounded
         public override void Jump()
         {
-            if (!CanMove || !CanCoyoteJump) return;
-            // calculate jump velocity from jump height and gravity
-            float jumpVelocity = Mathf.Sqrt(2f * -_gravity * _jumpHeight);
-            // override current y velocity but maintain x/z velocity
-            Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
+            Debug.Log(jumpCounter + "a");
+            //if (!CanMove || !CanCoyoteJump) return;
+                // calculate jump velocity from jump height and gravity
+                float jumpVelocity = Mathf.Sqrt(2f * -_gravity * _jumpHeight);
+                // override current y velocity but maintain x/z velocity
+                Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
+                jumpCounter++;
+                Debug.Log(jumpCounter + "b");
         }
 
         // path to destination using navmesh
@@ -195,6 +203,8 @@ namespace CharacterMovement
                 GroundNormal = hitInfo.normal;
                 LastGroundedPosition = transform.position;
                 SurfaceObject = hitInfo.collider.gameObject;
+                jumpCounter = 1;
+                Debug.Log(jumpCounter + "c");
                 return true;
             }
 

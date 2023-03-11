@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362208, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_RootOrder
@@ -117,6 +117,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba0b70afef16ac499ab299cd7f6b33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7961024437378856235}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6026679163780049680}
+        m_TargetAssemblyTypeName: CharacterMovementBaseDrug, Assembly-CSharp
+        m_MethodName: set_CanMove
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3631653132763374262}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7961024437378856234}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _cursorMode: 1
   _lookInCameraDirection: 0
   _hatchet: {fileID: 956782157270901729}
+  IsAlive: 1
+--- !u!114 &6026679163780049680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6837656694971767012, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
+  m_PrefabInstance: {fileID: 956782157538702324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011633059291058421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f4be9c8541b5c44a8f6f8fbb5283f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &7961024437378856234 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 7150609852432975582, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
+  m_PrefabInstance: {fileID: 956782157538702324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &7961024437378856235 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7150609852432975583, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
+  m_PrefabInstance: {fileID: 956782157538702324}
+  m_PrefabAsset: {fileID: 0}

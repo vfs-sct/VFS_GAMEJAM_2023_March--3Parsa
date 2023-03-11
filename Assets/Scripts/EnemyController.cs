@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class EnemyController : PlayerControllerDrug
 {
-    
+    private void OnValidate()
+    {
+        
+    }
 }
