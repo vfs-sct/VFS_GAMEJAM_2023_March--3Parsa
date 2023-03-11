@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnviroHazard : MonoBehaviour
 {
-    public int scene;
+    // public int scene;
+    public GameObject deathObj;
+    public GameObject playerObj;
 
     /// <summary>
     /// Player dies if touches this hazard.
@@ -14,7 +16,8 @@ public class EnviroHazard : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Debug.Log("Replace with line below.");
+            playerObj.SetActive(false);
+            deathObj.SetActive(true);
             // SceneManager.LoadScene(scene);
         }
     }

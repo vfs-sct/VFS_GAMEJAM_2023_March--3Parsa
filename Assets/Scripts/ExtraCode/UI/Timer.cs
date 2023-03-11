@@ -9,9 +9,12 @@ public class Timer : MonoBehaviour
     public float currentTime = 0f;
     public float startingTime = 270f;   // 4 Minutes
 
+    public GameObject deathObj;
+    public GameObject playerObj;
+
     [SerializeField] Text countdownText;
 
-    public int scene;   // for scene... Remove when isAlive is present
+    // public int scene;   // for scene... Remove when isAlive is present
 
     void Start()
     {
@@ -33,9 +36,8 @@ public class Timer : MonoBehaviour
             currentTime = 0;
             countdownText.color = Color.gray;
 
-            SceneManager.LoadScene(scene);  // replace later
-
-            print("No more time.");
+            playerObj.SetActive(false);
+            deathObj.SetActive(true);
         }
     }
 }
