@@ -57,6 +57,27 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.043333337
+        functionName: OnAnimationStart
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 289edeb32ec3d2844b4ac421b8549395, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.40166664
+        functionName: HitStart
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 289edeb32ec3d2844b4ac421b8549395, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.44166666
+        functionName: HitStop
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 289edeb32ec3d2844b4ac421b8549395, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.91917294
         functionName: OnAnimationEnd
         data: 
