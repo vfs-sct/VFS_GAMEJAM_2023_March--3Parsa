@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Templates/NeutralLightSetup.unity
     guid: 7039c368789497940a2afea2b88a8142
+  - enabled: 1
+    path: Assets/Scenes/PlayerMovementGym.unity
+    guid: 6137b36cfaf09f0429e3e1481fbd7eb7
   m_configObjects: {}

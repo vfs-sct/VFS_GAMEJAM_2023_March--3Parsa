@@ -15,12 +15,14 @@ using UnityEngine.InputSystem;
 
         protected CharacterMovementBaseDrug _characterMovement;
         protected Vector2 _moveInput;
+        private Animator _animator;
 
-        protected virtual void Awake()
-        {
-            _characterMovement = GetComponent<CharacterMovementBaseDrug>();
-            Cursor.lockState = _cursorMode;
-        }
+    protected virtual void Awake()
+    {
+        _animator = GetComponent<Animator>();
+        _characterMovement = GetComponent<CharacterMovementBaseDrug>();
+        Cursor.lockState = _cursorMode;
+    }
 
         public virtual void OnMove(InputValue value)
         {
@@ -34,7 +36,8 @@ using UnityEngine.InputSystem;
 
         public virtual void OnFire(InputValue value)
         {
-            // placeholder for shooting stuff
+        // placeholder for shooting stuff
+        _animator.SetTrigger("Attack");
         }
 
         public virtual void OnSlide(InputValue value)
