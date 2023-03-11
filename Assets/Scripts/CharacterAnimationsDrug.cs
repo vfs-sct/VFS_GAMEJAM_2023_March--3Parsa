@@ -28,4 +28,9 @@ public class CharacterAnimationsDrug : MonoBehaviour
         // send isolated y-velocity
         _animator.SetFloat("VerticalVelocity", velocity.y);
     }
+    void OnAnimationEnd()
+    {
+        _animator.applyRootMotion = false;
+        _characterMovement.CanMove = true;
+    }
 }
