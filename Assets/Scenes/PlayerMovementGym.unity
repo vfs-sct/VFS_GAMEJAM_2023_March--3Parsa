@@ -1524,7 +1524,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-330370
+  m_Name: pb_Mesh-17826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1967,7 +1967,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-330284
+  m_Name: pb_Mesh-17742
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2306,7 +2306,7 @@ PrefabInstance:
       objectReference: {fileID: 2007059482}
     - target: {fileID: 2104377505634058660, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
       propertyPath: m_VersionIndex
-      value: 113
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 2104377505634058662, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
       propertyPath: m_Mesh
@@ -2359,6 +2359,14 @@ PrefabInstance:
     - target: {fileID: 4759064247330732062, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886542727282411865, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
+      propertyPath: _maxJumps
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886542727282411865, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
+      propertyPath: _dashSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4886542727282411865, guid: f6dc19d3c8b9c9744a0c523121ace028, type: 3}
       propertyPath: _walkSpeed
@@ -2441,7 +2449,7 @@ PrefabInstance:
       objectReference: {fileID: 1075497124}
     - target: {fileID: 956782157270901741, guid: 83b8ec605532ef549ab6eaefa0e6b904, type: 3}
       propertyPath: m_VersionIndex
-      value: 74
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 956782157270901743, guid: 83b8ec605532ef549ab6eaefa0e6b904, type: 3}
       propertyPath: m_Mesh
@@ -2510,6 +2518,10 @@ PrefabInstance:
     - target: {fileID: 2327189607152254474, guid: 83b8ec605532ef549ab6eaefa0e6b904, type: 3}
       propertyPath: m_TrackedObjectOffset.z
       value: 0.3444027
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631653132763374262, guid: 83b8ec605532ef549ab6eaefa0e6b904, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83b8ec605532ef549ab6eaefa0e6b904, type: 3}
