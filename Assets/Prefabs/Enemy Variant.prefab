@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 269930521, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_VersionIndex
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 269930523, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_Mesh
@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362208, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_Name
-      value: Enemy Variant
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_RootOrder
@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1904041911644362209, guid: 45a8620817e156c4bb2d431d3ae8b89e, type: 3}
       propertyPath: m_LocalRotation.w
