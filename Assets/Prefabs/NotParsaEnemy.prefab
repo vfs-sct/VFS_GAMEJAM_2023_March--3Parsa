@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1405566579599334204, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+      propertyPath: _hatchetCollider
+      value: 
+      objectReference: {fileID: 6974463586261102760}
     - target: {fileID: 1468028522982145628, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -305,6 +309,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f4be9c8541b5c44a8f6f8fbb5283f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6974463586261102760 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8991935992069991029, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+  m_PrefabInstance: {fileID: 2018601683895769821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7461572482608143716 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8903430828855183289, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}

@@ -23,7 +23,7 @@ public class PlayerControllerDrug : MonoBehaviour
     private float attackRange = 2f;
     public LayerMask _enemyLayer;
     public LayerMask _flowerLayer;
-
+    public int playerHealth = 3;
     protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -75,7 +75,7 @@ public class PlayerControllerDrug : MonoBehaviour
     public virtual void Update()
     {
         if (_characterMovement == null) return;
-
+        if (playerHealth <= 0) OnDeath.Invoke();
         // find correct right/forward directions based on main camera rotation
         Vector3 up = Vector3.up;
         Vector3 right = Camera.main.transform.right;

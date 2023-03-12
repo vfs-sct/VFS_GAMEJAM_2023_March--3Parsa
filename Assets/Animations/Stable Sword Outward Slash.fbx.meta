@@ -49,9 +49,9 @@ ModelImporter:
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -64,14 +64,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.40166664
+      - time: 0.37999997
         functionName: HitStart
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 289edeb32ec3d2844b4ac421b8549395, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.44166666
+      - time: 0.5783333
         functionName: HitStop
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 289edeb32ec3d2844b4ac421b8549395, type: 3}
