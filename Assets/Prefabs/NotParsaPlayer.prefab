@@ -580,6 +580,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8903430828855183289, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
   m_PrefabInstance: {fileID: 1298966862604755312}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1819821081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604763721698879177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1396000493
+      Data2: 1182812948
+      Data3: -2026959698
+      Data4: -1845470778
+    Path: event:/SFX/Player/Death
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &1819821092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,7 +907,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1819821081
+--- !u!114 &6852350101382640395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -886,27 +916,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7604763721698879177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 9620fa4aab12cb646839f8a5036dd769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1396000493
-      Data2: 1182812948
-      Data3: -2026959698
-      Data4: -1845470778
-    Path: event:/SFX/Player/Death
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &9006435418526540880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7997146303304434976, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
