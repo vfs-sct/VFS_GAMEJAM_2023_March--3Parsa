@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace CharacterMovement
 {
@@ -12,7 +13,8 @@ namespace CharacterMovement
     [RequireComponent(typeof(NavMeshAgent))]
     public class CharacterMovement3DDrug : CharacterMovementBaseDrug
     {
-
+        public UnityEvent OnSlide;
+        public UnityEvent OnJump;
         // public-read private-set properties
         public override Vector3 Velocity { get => _rigidbody.velocity; protected set => _rigidbody.velocity = value; }
 
@@ -92,6 +94,7 @@ namespace CharacterMovement
         //this function applies the force and tells the player character to slide
         public override void Slide()
         {
+            OnSlide.Invoke();
             if(!IsGrounded && !canAirDash)  return;
             _dashDirection = MoveInput * _dashSpeed * _dashSpeedMultiplier;
             _rigidbody.AddForce(_dashDirection);
@@ -110,7 +113,8 @@ namespace CharacterMovement
 
                 // override current y velocity but maintain x/z velocity
                 Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
-                
+
+                OnJump.Invoke();
                 //update the number of jumps performed so far before landing
                 jumpCounter++;
         }

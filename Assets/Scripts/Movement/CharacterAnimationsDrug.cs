@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterAnimationsDrug : MonoBehaviour
 {
     // damping time smooths rapidly changing values sent to animator
     [SerializeField] protected float _dampTime = 0.1f;
-    
+    public UnityEvent OnAttack;
     protected Animator _animator;
     protected CharacterMovementBaseDrug _characterMovement;
     protected PlayerControllerDrug _playerController;
@@ -38,9 +39,7 @@ public class CharacterAnimationsDrug : MonoBehaviour
     //Anim Events
     void OnAnimationStart()
     {
-        //Debug.Log("anim start");
-        //_animator.applyRootMotion = true;
-        //_characterMovement.CanMove = false;
+        OnAttack.Invoke();
     }
     //Anim Events
     void OnAnimationEnd()

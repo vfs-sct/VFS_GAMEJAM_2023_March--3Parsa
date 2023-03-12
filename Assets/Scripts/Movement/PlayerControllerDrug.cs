@@ -10,6 +10,7 @@ using UnityEngine.InputSystem;
 public class PlayerControllerDrug : MonoBehaviour
 {
     public UnityEvent OnDeath;
+    public UnityEvent OnGetDamaged;
     // initial cursor state
     [SerializeField] protected CursorLockMode _cursorMode = CursorLockMode.Locked;
     // make character look in Camera direction instead of MoveDirection
@@ -58,6 +59,7 @@ public class PlayerControllerDrug : MonoBehaviour
             _animator.SetTrigger("Attack");
     }
 
+    //these are animation events set on the actual attach animation
     void HitStart()
     {
         _hatchet.GetComponent<Hatchet>().ToggleTrigger();
@@ -67,6 +69,7 @@ public class PlayerControllerDrug : MonoBehaviour
         _hatchet.GetComponent<Hatchet>().ToggleTrigger();
     }
 
+    //trigers the animation and functionality for slide
     public virtual void OnSlide(InputValue value)
     {
         _animator.SetTrigger("IsSliding");
@@ -87,6 +90,8 @@ public class PlayerControllerDrug : MonoBehaviour
         _characterMovement.SetLookDirection(moveInput);
         if (_lookInCameraDirection) _characterMovement.SetLookDirection(Camera.main.transform.forward);
     }
+
+    //checks to see if the interaction volume is overlapping on a poppy flower
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Stuff");
