@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform-14x4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6227649128566185166, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6227649128566185168, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -279,6 +283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform-14x4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6227649128566185166, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6227649128566185168, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -512,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 6227649128566185166, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
       propertyPath: m_Name
       value: Platform-14x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227649128566185166, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6227649128566185168, guid: d6f6a90c920fcf048a0d1de08dc39e2e, type: 3}
       propertyPath: m_Mesh

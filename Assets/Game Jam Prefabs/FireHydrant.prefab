@@ -97,9 +97,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5855987960239632579, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4680887512630351940, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1945729771621658983, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
       propertyPath: m_Name
       value: fire-hydrant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449099946748017113, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936584480543560527, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257070754973207283, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031187796595838201, guid: b0d166d0cb83d5549af845961a69b289, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d166d0cb83d5549af845961a69b289, type: 3}

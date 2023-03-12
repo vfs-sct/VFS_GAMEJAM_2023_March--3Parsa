@@ -121,6 +121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &7668777725089825904 stripped
@@ -206,6 +210,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -293,6 +301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4437556626167226133 stripped
@@ -378,6 +390,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -465,6 +481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4437556626493936508 stripped
@@ -550,6 +570,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -637,6 +661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4437556626923359464 stripped
@@ -722,6 +750,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -809,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4437556627535725726 stripped
@@ -895,6 +931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4437556627496774261 stripped
@@ -912,6 +952,10 @@ PrefabInstance:
     - target: {fileID: 3042911301915564590, guid: 19a925196fd540040ad5f1d0356bb191, type: 3}
       propertyPath: m_Name
       value: ParkingLineLong
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042911301915564590, guid: 19a925196fd540040ad5f1d0356bb191, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3042911301915564592, guid: 19a925196fd540040ad5f1d0356bb191, type: 3}
       propertyPath: m_Mesh
