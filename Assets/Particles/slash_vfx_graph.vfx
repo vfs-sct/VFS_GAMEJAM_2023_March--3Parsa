@@ -18,9 +18,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 259
-    y: -425
+    y: -533
     width: 2485
-    height: 1573
+    height: 1681
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -611,8 +611,7 @@ MonoBehaviour:
   castShadows: 0
   useExposureWeight: 0
   flipbookLayout: 0
-  shaderGraph: {fileID: -5475051401550479605, guid: 169242f388a5df44c85e9463f1c8f35f,
-    type: 3}
+  shaderGraph: {fileID: -5475051401550479605, guid: 169242f388a5df44c85e9463f1c8f35f, type: 3}
   materialSettings:
     m_PropertyNames: []
     m_PropertyValues: []
@@ -2818,8 +2817,7 @@ MonoBehaviour:
   castShadows: 0
   useExposureWeight: 0
   flipbookLayout: 0
-  shaderGraph: {fileID: -5475051401550479605, guid: 169242f388a5df44c85e9463f1c8f35f,
-    type: 3}
+  shaderGraph: {fileID: -5475051401550479605, guid: 169242f388a5df44c85e9463f1c8f35f, type: 3}
   materialSettings:
     m_PropertyNames: []
     m_PropertyValues: []
@@ -4088,7 +4086,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1599, y: -425}
+  m_UIPosition: {x: 1547, y: -533}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
