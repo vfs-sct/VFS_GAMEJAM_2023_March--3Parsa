@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1405566579599334204, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: _hatchetCollider
       value: 
-      objectReference: {fileID: 3224246516602218892}
+      objectReference: {fileID: 0}
     - target: {fileID: 8125768637389511939, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -61,14 +61,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
---- !u!64 &3224246516602218892 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 4519371457944537340, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
-  m_PrefabInstance: {fileID: 1298966862604755312}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3224246516602218893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4519371457944537341, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+  m_PrefabInstance: {fileID: 1298966862604755312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &4187956076027379931 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 2889130244579680683, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+  m_PrefabInstance: {fileID: 1298966862604755312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4220865090809055612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2924345879601752076, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+  m_PrefabInstance: {fileID: 1298966862604755312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604763721698879177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f4be9c8541b5c44a8f6f8fbb5283f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &5229160566594568703 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6527807881886490767, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
   m_PrefabInstance: {fileID: 1298966862604755312}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7604763721698879177 stripped
@@ -90,7 +106,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5229160566594568703}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4187956076027379931}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4220865090809055612}
+        m_TargetAssemblyTypeName: CharacterMovementBaseDrug, Assembly-CSharp
+        m_MethodName: set_CanMove
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2682165109269568568}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _cursorMode: 1
   _lookInCameraDirection: 0
   _hatchet: {fileID: 3224246516602218893}
