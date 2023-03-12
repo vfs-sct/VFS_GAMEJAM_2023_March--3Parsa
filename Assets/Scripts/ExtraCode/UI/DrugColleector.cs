@@ -16,16 +16,17 @@ public class DrugColleector : MonoBehaviour
     void Start()
     {
         score = GetComponent<Text>();
+
+        if (scoreReset == false && drugScoreText >= 1)
+        {
+            scoreReset = true;
+            drugScoreText = 0;
+        }
     }
 
     void Update()
     {
         score.text = "" + drugScoreText; // display score
-
-        if (scoreReset == true)
-        {
-            drugScoreText = 0;
-        }
     }
 }
 

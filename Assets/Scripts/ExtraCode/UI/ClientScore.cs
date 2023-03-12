@@ -8,6 +8,7 @@ public class ClientScore : MonoBehaviour
     /// Displays remaining Clients. Attach to object giving points.
     /// </summary>
     private static int clientScoreCount = 1;
+    public GameObject clientObj;
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -16,7 +17,8 @@ public class ClientScore : MonoBehaviour
             if (DrugColleector.drugScoreText >= 1)
             {
                 DrugColleector.drugScoreText -= 1;
-                Score.ClientScoreText -= clientScoreCount;
+                Score.clientScoreText += clientScoreCount;
+                clientObj.SetActive(false);
                 Debug.Log("Sold the drug");
             }
             else

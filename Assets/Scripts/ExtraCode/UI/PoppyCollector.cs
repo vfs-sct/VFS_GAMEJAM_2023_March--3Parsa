@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Typo but oh well
 public class PoppyCollector : MonoBehaviour
 {
     /// <summary>
@@ -16,17 +17,16 @@ public class PoppyCollector : MonoBehaviour
     void Start()
     {
         score = GetComponent<Text>();
+
+        if (scoreReset == false && poppyScoreText >= 1)
+        {
+            scoreReset = true;
+            poppyScoreText = 0;
+        }
     }
 
     void Update()
     {
         score.text = "" + poppyScoreText; // display score
-
-        if (scoreReset == true)
-        {
-            poppyScoreText = 0;
-        }
     }
 }
-
-// add drug version of this
