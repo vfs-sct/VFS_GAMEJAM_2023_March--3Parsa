@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -35,7 +36,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 6.17367
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -79,8 +80,134 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: polySurface3
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: transform10
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Police_Tpose_Foreal(Clone)
+      parentName: 
+      position: {x: -0.00018089969, y: -0.009968824, z: -0.013505862}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 6.1736703, y: 6.1736703, z: 6.1736703}
+    - name: imagePlane1
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: -0.008440402, y: 0.009628487, z: -0.024418866}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3.445488, y: 3.445488, z: 3.445488}
+    - name: imagePlane2
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.016047584, y: 0.009628487, z: 0.00506147}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 3.445488, y: 3.445488, z: 3.445488}
+    - name: pCube13
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: -0.001874694, y: 0.012259576, z: -0.00071866193}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1298107, y: 1.1298107, z: 1.1298107}
+    - name: pSphere2
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.017091537, z: 0.00008066108}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 0.1729108, y: 0.1729108, z: -0.1729108}
+    - name: pSphere5
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.017091537, z: 0.0002333307}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 0.1619782, y: 0.1619782, z: -0.1619782}
+    - name: pSphere1
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.017091537, z: 0.00008066108}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.1729108, y: 0.1729108, z: 0.1729108}
+    - name: polySurface3
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.0105864545, y: 0.014360677, z: -0.000045408065}
+      rotation: {x: -0.25507963, y: -0.00104933, z: -0.008176813, w: 0.9668849}
+      scale: {x: 0.11197108, y: 0.10953269, z: 0.10969697}
+    - name: transform10
+      parentName: polySurface3
+      position: {x: 0.038035754, y: -0.09447744, z: -0.0304779}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface1
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000037989303, y: 0.018063223, z: -0.0005045992}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.1619782, y: 0.1619782, z: 0.1619782}
+    - name: pSphere4
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.017091537, z: 0.0002333307}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.1619782, y: 0.1619782, z: 0.1619782}
+    - name: pCube20
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: -0.0012478447, y: 0.015674215, z: -0.00059156714}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.1619782, y: 0.1619782, z: 0.1619782}
+    - name: pCube21
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.015674215, z: -0.00059156714}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 0.1619782, y: 0.1619782, z: -0.1619782}
+    - name: head3
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000029301807, y: 0.017252253, z: -0.0006111943}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.4934305, y: 2.0185509, z: 1.4934305}
+    - name: pCube12
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 7.2405025e-20, y: 0.013287718, z: -0.00048802898}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 5.12556, y: 7.3708696, z: 3.9865465}
+    - name: transform9
+      parentName: pCube12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube16
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000027299513, y: 0.007024269, z: -0.00044134614}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: polySurface5
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: -0.000012228909, y: 0.013475582, z: -0.00057533133}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.1619782, y: 0.1619782, z: 0.1619782}
+    - name: polySurface7
+      parentName: polySurface5
+      position: {x: 0.00025639698, y: -0.07322498, z: 0.017057769}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform11
+      parentName: polySurface5
+      position: {x: 0.00025639698, y: -0.07322498, z: 0.017057769}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface8
+      parentName: polySurface5
+      position: {x: 0.00025639698, y: -0.07322498, z: 0.01727255}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube29
+      parentName: Police_Tpose_Foreal(Clone)
+      position: {x: 0.000027299513, y: 0.007024269, z: -0.00044134614}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -88,16 +215,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.061736695
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
