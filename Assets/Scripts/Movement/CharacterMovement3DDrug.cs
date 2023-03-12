@@ -88,12 +88,15 @@ namespace CharacterMovement
         {
             MoveSpeedMultiplier = 1f;
         }
+
+        //this function applies the force and tells the player character to slide
         public override void Slide()
         {
             if(!IsGrounded && !canAirDash)  return;
             _dashDirection = MoveInput * _dashSpeed * _dashSpeedMultiplier;
             _rigidbody.AddForce(_dashDirection);
         }
+        //calls this function to check if it is possiblee to jump
         public override void TryJump()
         {
             if (IsGrounded || jumpCounter < _maxJumps) Jump();
@@ -102,24 +105,24 @@ namespace CharacterMovement
         // attempts a jump, will fail if not grounded
         public override void Jump()
         {
-            Debug.Log(jumpCounter + "a");
-            //if (!CanMove || !CanCoyoteJump) return;
                 // calculate jump velocity from jump height and gravity
                 float jumpVelocity = Mathf.Sqrt(2f * -_gravity * _jumpHeight);
+
                 // override current y velocity but maintain x/z velocity
                 Velocity = new Vector3(Velocity.x, jumpVelocity, Velocity.z);
+                
+                //update the number of jumps performed so far before landing
                 jumpCounter++;
-                Debug.Log(jumpCounter + "b");
         }
 
         // path to destination using navmesh
-        public virtual void MoveTo(Vector3 destination)
+        public override void MoveTo(Vector3 destination)
         {
             _navMeshAgent.SetDestination(destination);
         }
 
         // stop all movement
-        public virtual void Stop()
+        public override void Stop()
         {
             _navMeshAgent.ResetPath();
             SetMoveInput(Vector3.zero);
@@ -204,7 +207,6 @@ namespace CharacterMovement
                 LastGroundedPosition = transform.position;
                 SurfaceObject = hitInfo.collider.gameObject;
                 jumpCounter = 1;
-                Debug.Log(jumpCounter + "c");
                 return true;
             }
 

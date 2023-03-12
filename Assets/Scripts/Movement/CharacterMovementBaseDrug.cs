@@ -66,6 +66,8 @@ public abstract class CharacterMovementBaseDrug : MonoBehaviour
 
 
     // methods
+    public virtual void MoveTo(Vector3 destination) { }
+    public virtual void Stop() { }
     public virtual void TryJump() { }
     public virtual void Jump() { }
     public virtual void Slide() { }

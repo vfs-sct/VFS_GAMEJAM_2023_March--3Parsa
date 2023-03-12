@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class BreakWalll : MonoBehaviour
 {
-    // Needs hp
+    private float objectHealth = 1f;
+
+
 }
