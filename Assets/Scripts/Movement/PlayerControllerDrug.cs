@@ -39,12 +39,10 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnSprintStart()
     {
-        Debug.Log("SprintStart");
         _characterMovement?.StartSprint();
     }
     public virtual void OnSprintStop()
     {
-        Debug.Log("SprintStop");
         _characterMovement?.StopSprint();
     }
 
@@ -59,12 +57,10 @@ public class PlayerControllerDrug : MonoBehaviour
     void HitStart()
     {
         _hatchet.GetComponent<Hatchet>().ToggleTrigger();
-        Debug.Log("start" + _hatchet.GetComponent<Collider>().isTrigger);
     }
     void HitStop()
     {
         _hatchet.GetComponent<Hatchet>().ToggleTrigger();
-        Debug.Log("start" + _hatchet.GetComponent<Collider>().isTrigger);
     }
 
     public virtual void OnSlide(InputValue value)
@@ -72,7 +68,7 @@ public class PlayerControllerDrug : MonoBehaviour
         _animator.SetTrigger("IsSliding");
         _characterMovement?.Slide(); 
     }
-    protected virtual void Update()
+    public virtual void Update()
     {
         if (_characterMovement == null) return;
 

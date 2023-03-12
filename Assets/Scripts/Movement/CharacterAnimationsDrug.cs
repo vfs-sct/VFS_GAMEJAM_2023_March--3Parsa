@@ -45,7 +45,6 @@ public class CharacterAnimationsDrug : MonoBehaviour
     //Anim Events
     void OnAnimationEnd()
     {
-        Debug.Log("anim end");
         _animator.applyRootMotion = false;
         _characterMovement.CanMove = true;
     }
