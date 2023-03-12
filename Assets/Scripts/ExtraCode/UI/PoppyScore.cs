@@ -6,27 +6,16 @@ using UnityEngine.UI;
 public class PoppyScore : MonoBehaviour
 {
     /// <summary>
-    /// Displays collected Poppies.
+    /// Displays collected Poppies. Attach to object giving points.
     /// </summary>
-    public static int scoreVal = 0;
-    public bool scoreReset;
+    private static int poppyScoreCount = 1;
 
-    Text score;
-
-    void Start()
+    private void OnTriggerEnter(Collider collider)
     {
-        score = GetComponent<Text>();
-    }
-
-    void Update()
-    {
-        score.text = "" + scoreVal; // display score
-
-        if (scoreReset == true)
+        if (collider.gameObject.tag == "Player")
         {
-            scoreVal = 0;
+            PoppyCollector.poppyScoreText += poppyScoreCount;
+            Debug.Log("Collected the poppy");
         }
     }
 }
-
-// Check player to add points

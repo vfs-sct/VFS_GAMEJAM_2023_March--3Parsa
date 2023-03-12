@@ -6,25 +6,24 @@ using UnityEngine.UI;
 public class DrugScore : MonoBehaviour
 {
     /// <summary>
-    /// Displays collected Drugs.
+    /// Displays collected Drugs. Attach to object giving points.
     /// </summary>
-    public static int scoreVal = 0;
-    public bool scoreReset;
+    private static int drugScoreCount = 1;
 
-    Text score;
-
-    void Start()
+    private void OnTriggerEnter(Collider collider)
     {
-        score = GetComponent<Text>();
-    }
-
-    void Update()
-    {
-        score.text = "" + scoreVal; // display score
-
-        if (scoreReset == true)
+        if (collider.gameObject.tag == "Player")
         {
-            scoreVal = 0;
+            if (PoppyCollector.poppyScoreText >= 1)
+            {
+                PoppyCollector.poppyScoreText -= 1;
+                DrugColleector.drugScoreText += drugScoreCount;
+                Debug.Log("Collected the drug");
+            }
+            else
+            {
+                Debug.Log("You do not have Poppies to make into Drugs.");
+            }
         }
     }
 }

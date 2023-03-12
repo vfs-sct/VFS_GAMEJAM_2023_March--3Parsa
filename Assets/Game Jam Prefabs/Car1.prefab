@@ -97,9 +97,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5321527697133940143, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490915460843498906, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
       propertyPath: m_Name
       value: NormalCar1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303077116918105841, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918237477846620172, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135501457687891484, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c20846541cccb8b40ac1ec868f9d1775, type: 3}

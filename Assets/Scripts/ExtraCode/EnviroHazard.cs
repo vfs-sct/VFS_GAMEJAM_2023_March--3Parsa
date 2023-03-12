@@ -14,7 +14,7 @@ public class EnviroHazard : MonoBehaviour
     /// <param name="collider"></param>
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Finish")
         {
             playerObj.SetActive(false);
             deathObj.SetActive(true);
