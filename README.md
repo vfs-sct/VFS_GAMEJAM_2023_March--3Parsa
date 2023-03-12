@@ -1,31 +1,50 @@
-# GAME TITLE
+POPPY RUNNER:
 
-### High Concept
+
+HIGH CONCEPT:
+
+Poppy Runner is a top-down isometric low-poly hack and slash platformer where you play as a “flower delivery person” 
+named Pablo who collects poppy flowers, converts them to “goods”, and sells them to people.
+
 
 <ONE PARA INTRO - THE GAME, THE OBJECTIVE, THE MAJOR ACTIVITY>
 
-* <KEY FEATURES LIST - TOP 5>
+In Poppy Runner you will be traversing through the city avoiding (or killing) cops, taking poppy flowers, converting 
+them to goods, and delivering for money. Flowers mean goods, goods mean money, and money means POWER! The goal of this game is to obtain 
+the most money in a certain amounnt of time. Utilize running, jumping, and sliding to move around quickly. 
 
-### Documents
+
+KEY FEATURES LIST:
+
+In this game you can convert poppy flowers into the goods in fast-paced gameplay and within a certain time 
+
+You can sprint, attack, double jump or slide under various obstacles to overcome a multitude of things in your way, such as police, vehicles, and more. 
+
+Another thing you can do in this game is sell off goods for money to various clients as flower is power and so as money. 
+
+The placement of poppy flowers, buildings, and clients are procedurally randomized
+
+
+DOCUMENTS:
 
 [Game Design](<https://docs.google.com/document/d/1c7rzvjcPftg2-DRkINb46bQuE8vqqljLOWVe_5XHIaw/edit?usp=sharing>)
 
 [Technical Design](<LINK TO TDD HERE>)
 
-### Controls
 
-Action               | Keyboard Control  | Gamepad Control
----                  |---                |---
-Movement             | AWSD              | Left stick
-Direction Aim        | Mouse position    | Right stick
-Basic Gun attack     | Left mouse click  | R2
-Basic Arm attack     | Right mouse click | L2
-(Eye Bomb)           | Q                 | R1
-Trigger Eye Bomb     | Right mouse click | R1
-Dash                 | Space             | L1
-Interact(Pick up)    | F                 | X
-UI                   | AWSD(Select)+ Enter(Confirm)+ESC(Cancel) | Left/Right stick(Select)+X(Confirm)+Square(Cancel)
-Heal                 | Ctrl              | Triangle
+CONTROLS:
+
+Action               | Keyboard Control  |
+---                  |---                |
+Movement             | WASD              |
+Dash                 | Shift             |
+Basic Slash Attack   | Left mouse click  | 
+Jump                 | Jump              | 
+Pause                | Esc               |
+Trigger Eye Bomb     | Right mouse click |
+Dash                 | Space             |
+Interact(Pick up)    | F                 |
+
 
 ### Debug tools/controls
 
@@ -38,6 +57,20 @@ Use the <key> to open the menu
 
 * <CAVEATS: KNOWN THINGS TO NOT DO, CRASH BUGS>
 
-### Team:
 
-* <TEAM MEMBER - ROLE>
+TEAM:
+
+Cayle Orquiola [Programmer/UI]
+
+Dylan Orquiola [VFX]
+
+Jannelle Camaclang [Character/Props Artist]
+
+Jessy Yu [Designer/Project Manager]
+
+Max Osmachko [Environmental/Props Artist]
+
+Pradeep Pillai [Programmer/Designer]
+
+Rodney Fan [Audio Design]
+
