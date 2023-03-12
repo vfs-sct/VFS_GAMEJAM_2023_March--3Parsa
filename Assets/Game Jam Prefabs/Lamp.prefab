@@ -80,6 +80,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: f77897b6042ad384dac1b6f081283a83, type: 2}
     - target: {fileID: -6722085885383957590, guid: 3bafe3cbd17a5f544ae945aac31e3c32, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 3bafe3cbd17a5f544ae945aac31e3c32, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5832863
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 3bafe3cbd17a5f544ae945aac31e3c32, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 3bafe3cbd17a5f544ae945aac31e3c32, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 3bafe3cbd17a5f544ae945aac31e3c32, type: 3}
       propertyPath: m_Lightmapping
       value: 1
       objectReference: {fileID: 0}
