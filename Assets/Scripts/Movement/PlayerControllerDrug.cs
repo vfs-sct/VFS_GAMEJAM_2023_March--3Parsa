@@ -97,7 +97,6 @@ public class PlayerControllerDrug : MonoBehaviour
     //checks to see if the interaction volume is overlapping on a poppy flower
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Stuff");
         if(other.gameObject.TryGetComponent(out PoppyFlower poppyFlower))
         {
             _animator.SetTrigger("PickUpFlower");

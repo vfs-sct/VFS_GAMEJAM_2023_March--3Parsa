@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_Name
-      value: Police
+      value: NotParsaPolice
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_IsActive
@@ -247,7 +247,7 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 296825599}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 296825604}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
@@ -271,7 +271,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 296825603}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -283,7 +283,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 296825600}
         m_TargetAssemblyTypeName: CharacterMovementBaseDrug, Assembly-CSharp
         m_MethodName: set_CanMove
         m_Mode: 6
@@ -454,7 +454,7 @@ PrefabInstance:
     - target: {fileID: 598858927, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
       propertyPath: _parentObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8380984961044399240}
     - target: {fileID: 598858928, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
       propertyPath: m_Enabled
       value: 0
