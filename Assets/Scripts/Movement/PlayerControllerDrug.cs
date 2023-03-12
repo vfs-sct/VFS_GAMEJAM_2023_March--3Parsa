@@ -19,6 +19,10 @@ public class PlayerControllerDrug : MonoBehaviour
     protected Vector2 _moveInput;
     private Animator _animator;
     public bool IsAlive = true;
+    private GameObject _target;
+    private float attackRange = 2f;
+    public LayerMask _enemyLayer;
+    public LayerMask _flowerLayer;
 
     protected virtual void Awake()
     {
@@ -48,10 +52,10 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnFire(InputValue value)
     {
-        _characterMovement.CanMove = false;
-        _animator.applyRootMotion = true;
-        //_hatchet.GetComponent<Collider>().isTrigger = true;
-        _animator.SetTrigger("Attack");        
+            _characterMovement.CanMove = false;
+            _animator.applyRootMotion = true;
+            //_hatchet.GetComponent<Collider>().isTrigger = true;
+            _animator.SetTrigger("Attack");
     }
 
     void HitStart()
@@ -82,5 +86,14 @@ public class PlayerControllerDrug : MonoBehaviour
         _characterMovement.SetMoveInput(moveInput);
         _characterMovement.SetLookDirection(moveInput);
         if (_lookInCameraDirection) _characterMovement.SetLookDirection(Camera.main.transform.forward);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Stuff");
+        if(other.gameObject.TryGetComponent(out PoppyFlower poppyFlower))
+        {
+            _animator.SetTrigger("PickUpFlower");
+            other.gameObject.SetActive(false);
+        }
     }
 }

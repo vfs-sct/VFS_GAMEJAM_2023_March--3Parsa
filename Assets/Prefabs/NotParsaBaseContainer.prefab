@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dampTime: 0.1
-  _hatchetCollider: {fileID: 4519371457944537340}
+  _hatchetCollider: {fileID: 0}
 --- !u!114 &529941855860985142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,10 +2434,5 @@ PrefabInstance:
 --- !u!4 &4519371457944537328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2678006388991277936, guid: 06789a5f85c84224fb4c213d0e863b84, type: 3}
-  m_PrefabInstance: {fileID: 1986713032903881600}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &4519371457944537340 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 2678006388991277948, guid: 06789a5f85c84224fb4c213d0e863b84, type: 3}
   m_PrefabInstance: {fileID: 1986713032903881600}
   m_PrefabAsset: {fileID: 0}
