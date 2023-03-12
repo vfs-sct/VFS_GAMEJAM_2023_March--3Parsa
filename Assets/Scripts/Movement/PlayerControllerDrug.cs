@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 
 // sends input from PlayerInput to attached CharacterMovement components
@@ -25,6 +26,8 @@ public class PlayerControllerDrug : MonoBehaviour
     public LayerMask _enemyLayer;
     public LayerMask _flowerLayer;
     public int playerHealth = 3;
+    private int highInt;
+
     protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -99,6 +102,16 @@ public class PlayerControllerDrug : MonoBehaviour
         {
             _animator.SetTrigger("PickUpFlower");
             other.gameObject.SetActive(false);
+        }
+        if(other.gameObject.TryGetComponent(out NpcController npc))
+        {
+            highInt = Random.Range(1, 5);
+            npc.highInt= highInt;
+            npc.isHigh = true;
+            //other.gameObject.GetComponent<Animator>().SetInteger("HighInt",highInt);
+            other.gameObject.GetComponent<Animator>().SetFloat("HighInt",highInt);
+            Debug.Log("sasfdf " + highInt);
+            other.gameObject.GetComponent<Animator>().SetTrigger("IsHigh");
         }
     }
 }
