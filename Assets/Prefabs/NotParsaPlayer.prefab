@@ -101,10 +101,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1405566579599334204, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
-      propertyPath: _hatchetCollider
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2889130244579680683, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: m_Height
       value: 0.9372062
@@ -289,6 +285,7 @@ MonoBehaviour:
   _flowerLayer:
     serializedVersion: 2
     m_Bits: 0
+  playerHealth: 3
 --- !u!114 &5043200096885530006
 MonoBehaviour:
   m_ObjectHideFlags: 0
