@@ -1004,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_SelectedVertices.Array.data[3]
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 2249639486382101484, guid: 48504812e48c78d46aaf04659975c581, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b46847cd42453641967e6af8ec39658, type: 2}
     - target: {fileID: 4150137065850682977, guid: 48504812e48c78d46aaf04659975c581, type: 3}
       propertyPath: m_Name
       value: Sidewalk-1x14 (1)
