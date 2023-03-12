@@ -53,6 +53,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6641962233361508825}
     m_Modifications:
+    - target: {fileID: -9006362064819531208, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -97,9 +101,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8501284156531000229, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7917291961305824890, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5731229141766309534, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2615453208677245630, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1308154924754892956, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1301299962433576674, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725557647042468855, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
       propertyPath: m_Name
       value: flowerpowerBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724552067895137668, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968184524514357634, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930630388295646473, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340423644140328716, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085036178219441596, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695304551642739032, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728723278266805325, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e69a129068fcff4ea2c27a832445a73, type: 3}
