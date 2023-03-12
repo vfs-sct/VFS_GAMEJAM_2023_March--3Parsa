@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class DeathWithFall : MonoBehaviour
 {
-    public int scene;
+    // public int scene;
     public float floorLevelDeath = -10;
+    public GameObject deathObj;
+    public GameObject playerObj;
 
     /// <summary>
     /// If the player reaches the asssigned floor level.
@@ -15,10 +17,10 @@ public class DeathWithFall : MonoBehaviour
     {
         if (transform.position.y <= floorLevelDeath)     // Checks if position is <= than defined floor level
         {
-            Debug.Log("Replace with line below.");
+            playerObj.SetActive(false);
+            deathObj.SetActive(true);
+            Debug.Log("You fell out of the world.");
             // SceneManager.LoadScene(scene);
         }
     }
 }
-
-// Make player state for isALive to summarize all death scripts and mechanics
