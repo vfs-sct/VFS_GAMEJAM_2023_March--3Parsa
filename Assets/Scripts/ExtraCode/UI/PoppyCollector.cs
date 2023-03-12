@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class PoppyCollector : MonoBehaviour
 {
     /// <summary>
-    /// Displays served Clients. Attach to UI.
+    /// Displays collected Poppies. Attach to UI.
     /// </summary>
-    public static int ClientScoreText = 3;
-    public bool scoreReset = false;
+    public static int poppyScoreText = 0;
+    public bool scoreReset = true;
 
     Text score;
 
@@ -20,11 +20,13 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        score.text = "Client: " + ClientScoreText; // display score
+        score.text = "" + poppyScoreText; // display score
 
         if (scoreReset == true)
         {
-            ClientScoreText = 0;
+            poppyScoreText = 0;
         }
     }
 }
+
+// add drug version of this
