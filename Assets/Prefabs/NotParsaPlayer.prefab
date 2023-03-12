@@ -71,7 +71,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4454526075685900514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6349148, y: 1.1200002, z: -4.3966107}
+  m_LocalPosition: {x: 0.009, y: 1.229, z: 0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -112,6 +112,10 @@ PrefabInstance:
     - target: {fileID: 2889130244579680683, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: m_Center.y
       value: 0.4686031
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519371457944537329, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4519371457944537331, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
       propertyPath: m_Mesh
@@ -279,6 +283,12 @@ MonoBehaviour:
   _lookInCameraDirection: 0
   _hatchet: {fileID: 3224246516602218893}
   IsAlive: 1
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _flowerLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5043200096885530006
 MonoBehaviour:
   m_ObjectHideFlags: 0
