@@ -46,6 +46,54 @@ CapsuleCollider:
   m_Height: 0.51
   m_Direction: 1
   m_Center: {x: -0.0044511473, y: 1.1675583e-13, z: 8.096471e-15}
+--- !u!1 &4454526075685900514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8882432646552973655}
+  - component: {fileID: 9205595299960695100}
+  m_Layer: 0
+  m_Name: CameraLock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8882432646552973655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454526075685900514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6349148, y: 1.1200002, z: -4.3966107}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7116352601587973235}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &9205595299960695100
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454526075685900514}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1001 &1298966862604755312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,6 +165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotParsaPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 8903430828855183289, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
 --- !u!1 &3224246516602218893 stripped
@@ -148,6 +200,11 @@ MonoBehaviour:
 --- !u!54 &5229160566594568703 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6527807881886490767, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
+  m_PrefabInstance: {fileID: 1298966862604755312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7116352601587973235 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8125768637389511939, guid: 22c0e919697e2104492d11fe147b41ac, type: 3}
   m_PrefabInstance: {fileID: 1298966862604755312}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7604763721698879177 stripped
