@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6952851529192526778}
   - component: {fileID: 6952851529192526779}
   - component: {fileID: 6952851529192526776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PoppyFlower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

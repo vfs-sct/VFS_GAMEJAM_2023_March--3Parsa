@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2678006388991277937}
   - component: {fileID: 2678006388991277938}
   - component: {fileID: 2678006388991277939}
-  - component: {fileID: 2678006388991277948}
+  - component: {fileID: 7447826640618281461}
+  - component: {fileID: 6573524985685276344}
   m_Layer: 0
   m_Name: Hatchet
   m_TagString: Untagged
@@ -1249,7 +1250,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -1266,8 +1267,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2678006388991277949}
   m_Mesh: {fileID: 0}
---- !u!64 &2678006388991277948
-MeshCollider:
+--- !u!65 &7447826640618281461
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1276,7 +1277,18 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.0000033, y: 2.0000012, z: 2.0000072}
+  m_Center: {x: 1.0000091, y: 1.0000015, z: 1.0000043}
+--- !u!114 &6573524985685276344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678006388991277949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e98cde64ce9c53489c791f83a06c52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -101,3 +101,4 @@ MonoBehaviour:
   _speed: 2
   _pointReachedDistance: 0.05
   _easingDistance: 0.5
+  _physicsMode: 1
