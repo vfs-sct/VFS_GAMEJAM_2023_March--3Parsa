@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineLong
       objectReference: {fileID: 0}
+    - target: {fileID: 3042911301915564590, guid: 19a925196fd540040ad5f1d0356bb191, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3042911301915564592, guid: 19a925196fd540040ad5f1d0356bb191, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -634,6 +638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4673890859372336773 stripped
@@ -719,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -806,6 +818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4673890859577135996 stripped
@@ -891,6 +907,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -978,6 +998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4673890860055288586 stripped
@@ -1063,6 +1087,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -1150,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4673890860439586520 stripped
@@ -1236,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &4673890860652730814 stripped
@@ -1321,6 +1357,10 @@ PrefabInstance:
     - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
       propertyPath: m_Name
       value: ParkingLineShort (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
@@ -1532,6 +1572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParkingLineShort
       objectReference: {fileID: 0}
+    - target: {fileID: 9062141013310449081, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7840ebd550c7af34bbe7375aef5ec4b5, type: 3}
 --- !u!4 &1667836480028971922 stripped
@@ -1618,7 +1662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626167226130, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 556
+      value: 562
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626169958717, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1626,7 +1670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626169958717, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 571
+      value: 577
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626169958719, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1642,7 +1686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626460659291, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 565
+      value: 571
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626493936505, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1654,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626493936507, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 571
+      value: 577
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626705004797, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1662,7 +1706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626705004797, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 559
+      value: 565
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626705004799, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1678,7 +1722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556626923359471, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 571
+      value: 577
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627237601632, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1686,7 +1730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627237601632, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 571
+      value: 577
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627237601634, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1702,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627496774258, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 562
+      value: 568
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627535725721, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1710,7 +1754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627535725721, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 568
+      value: 574
       objectReference: {fileID: 0}
     - target: {fileID: 4437556627535725723, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1774,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4636014915650292467, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 483
+      value: 489
       objectReference: {fileID: 0}
     - target: {fileID: 7668777725089825909, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_Mesh
@@ -1786,7 +1830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7668777725089825911, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
       propertyPath: m_VersionIndex
-      value: 553
+      value: 559
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d445856ce35d84695580d09e0d024b, type: 3}
@@ -1998,7 +2042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1553810771034492748, guid: 48504812e48c78d46aaf04659975c581, type: 3}
       propertyPath: m_VersionIndex
-      value: 1552
+      value: 1558
       objectReference: {fileID: 0}
     - target: {fileID: 1553810771034492748, guid: 48504812e48c78d46aaf04659975c581, type: 3}
       propertyPath: m_SelectedEdges.Array.size
