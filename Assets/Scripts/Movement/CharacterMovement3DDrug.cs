@@ -225,6 +225,7 @@ namespace CharacterMovement
             Vector3 point = collision.contacts[0].point;
             if(Vector3.Distance(point, transform.position) < landingCollisionMaxDistance)
             {
+                GetComponent<FMODUnity.StudioEventEmitter>().Play();
                 OnGrounded.Invoke(collision.gameObject);
             }
         }

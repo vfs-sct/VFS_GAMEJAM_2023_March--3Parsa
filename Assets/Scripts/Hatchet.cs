@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Hatchet : MonoBehaviour
 {
-    [SerializeField] private GameObject _parentObject;    
+    [SerializeField] private GameObject _parentObject;
+    private Collider _collider => GetComponent<Collider>();
     private int _playerHealth { get; set; }
     
     private void OnTriggerEnter(Collider other)
@@ -60,6 +61,7 @@ public class Hatchet : MonoBehaviour
     //toggles the trigger of the hatchet on and off.
     public void ToggleTrigger()
     {
+        _collider.enabled = !_collider.enabled;
         this.gameObject.GetComponent<Collider>().isTrigger = !this.gameObject.GetComponent<Collider>().isTrigger;
     }
 }
