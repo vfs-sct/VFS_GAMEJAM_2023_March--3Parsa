@@ -502,7 +502,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh358734
+  m_Name: pb_Mesh383746
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1388,7 +1388,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh358814
+  m_Name: pb_Mesh383824
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4495,7 +4495,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh358922
+  m_Name: pb_Mesh383932
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4998,7 +4998,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh359068
+  m_Name: pb_Mesh384052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7031,7 +7031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 710, y: 445}
+  m_AnchoredPosition: {x: 710, y: 139}
   m_SizeDelta: {x: 23.45, y: 10.699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975768624
@@ -7072,6 +7072,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975768622}
   m_CullTransparentMesh: 1
+--- !u!1 &1975794694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5261393909262751295, guid: 6b92da19a535f794d81d956406572d4f, type: 3}
+  m_PrefabInstance: {fileID: 1738376986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975794698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975794694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16b9f4d8247f4d4fb62dfe52d974987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1982790579
 GameObject:
   m_ObjectHideFlags: 0
