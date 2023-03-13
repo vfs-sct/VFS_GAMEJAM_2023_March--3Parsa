@@ -105,7 +105,7 @@ public class PlayerControllerDrug : MonoBehaviour
         if(other.gameObject.TryGetComponent(out NpcController npc))
         {
             highInt = Random.Range(1, 5);
-            npc.highInt= highInt;
+            npc._highInt= highInt;
             npc.isHigh = true;
             //other.gameObject.GetComponent<Animator>().SetInteger("HighInt",highInt);
             other.gameObject.GetComponent<Animator>().SetFloat("HighInt",highInt);

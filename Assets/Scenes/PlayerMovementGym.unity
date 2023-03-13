@@ -2325,38 +2325,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotParsaPolice
       objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Size.x
-      value: 0.79405886
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Size.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Size.z
-      value: 0.29398397
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Center.x
-      value: -0.34702682
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Center.y
-      value: 0.00029357945
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_Center.z
-      value: 0.09699134
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686973893504909486, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9152701779333422642, guid: ee9c0005d2ea2874e997072fd8b58b62, type: 3}
       propertyPath: m_RootOrder
       value: 2

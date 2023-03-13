@@ -6,7 +6,7 @@ public class NpcController : MonoBehaviour
 {
     public bool testBool = false;
     public bool isHigh = false;
-    public int highInt;
+    public int _highInt;
     public Animator animator;
 
     private void OnValidate()
@@ -30,9 +30,9 @@ public class NpcController : MonoBehaviour
     }
     public void CustomerGotDrugs()
     {
-        //ToggleIsHigh();
-        //CalulateHighInt();
-        //animator.SetBool("IsHigh", isHigh);
-        //animator.SetFloat("HighInt", _highInt);
+        ToggleIsHigh();
+        CalulateHighInt();
+        animator.SetBool("IsHigh", isHigh);
+        animator.SetFloat("HighInt", _highInt);
     }
 }

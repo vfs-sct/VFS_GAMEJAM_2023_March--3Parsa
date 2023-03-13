@@ -312,7 +312,7 @@ MonoBehaviour:
       m_Calls: []
   _cursorMode: 1
   _lookInCameraDirection: 0
-  _hatchet: {fileID: 0}
+  _hatchet: {fileID: 962873020410349436}
   IsAlive: 1
   _enemyLayer:
     serializedVersion: 2
@@ -455,14 +455,6 @@ PrefabInstance:
       propertyPath: _parentObject
       value: 
       objectReference: {fileID: 8380984961044399240}
-    - target: {fileID: 598858928, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598858928, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8490019025070316386, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
       propertyPath: m_Name
       value: Baton (2)
@@ -529,3 +521,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
+--- !u!1 &962873020410349436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8490019025070316386, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
+  m_PrefabInstance: {fileID: 8686973893996583966}
+  m_PrefabAsset: {fileID: 0}
