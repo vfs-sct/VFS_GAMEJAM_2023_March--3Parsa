@@ -37,13 +37,11 @@ CONTROLS:
 Action               | Keyboard Control  |
 ---                  |---                |
 Movement             | WASD              |
-Dash                 | Shift             |
+Sprint               | Shift             |
 Basic Slash Attack   | Left mouse click  | 
-Jump                 | Jump              | 
+Jump                 | Space             | 
 Pause                | Esc               |
-Trigger Eye Bomb     | Right mouse click |
 Dash                 | Space             |
-Interact(Pick up)    | F                 |
 
 
 ### Debug tools/controls
