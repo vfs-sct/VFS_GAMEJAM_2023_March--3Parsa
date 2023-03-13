@@ -29,7 +29,6 @@ DOCUMENTS:
 
 [Game Design](<https://docs.google.com/document/d/1c7rzvjcPftg2-DRkINb46bQuE8vqqljLOWVe_5XHIaw/edit?usp=sharing>)
 
-[Technical Design](<LINK TO TDD HERE>)
 
 
 CONTROLS:
@@ -37,13 +36,12 @@ CONTROLS:
 Action               | Keyboard Control  |
 ---                  |---                |
 Movement             | WASD              |
-Dash                 | Shift             |
-Basic Slash Attack   | Left mouse click  | 
-Jump                 | Jump              | 
+Sprint               | Shift             |
+Jump                 | Space             | 
+Slide                | Ctrl              | 
 Pause                | Esc               |
-Trigger Eye Bomb     | Right mouse click |
-Dash                 | Space             |
-Interact(Pick up)    | F                 |
+Basic Slash Attack   | Left mouse click  |
+
 
 
 ### Debug tools/controls
