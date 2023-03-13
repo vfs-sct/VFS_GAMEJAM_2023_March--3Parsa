@@ -247,18 +247,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296825599}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 296825604}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
@@ -299,6 +287,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 296825599}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -438,7 +438,7 @@ MonoBehaviour:
   OnAttack:
     m_PersistentCalls:
       m_Calls: []
-  _hatchetCollider: {fileID: 0}
+  _hatchetCollider: {fileID: 8686973893504909486}
 --- !u!4 &9152701779333422642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
@@ -524,5 +524,10 @@ PrefabInstance:
 --- !u!1 &962873020410349436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8490019025070316386, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
+  m_PrefabInstance: {fileID: 8686973893996583966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8686973893504909486 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 598858928, guid: 4ded74c1993e3bd428f73247e585c9e0, type: 3}
   m_PrefabInstance: {fileID: 8686973893996583966}
   m_PrefabAsset: {fileID: 0}
