@@ -990,6 +990,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 345210076}
+    - target: {fileID: 5043200096885530006, guid: 2dfbf23ec932075478899d472c4d8f16, type: 3}
+      propertyPath: deathObj
+      value: 
+      objectReference: {fileID: 460434587}
+    - target: {fileID: 5043200096885530006, guid: 2dfbf23ec932075478899d472c4d8f16, type: 3}
+      propertyPath: playerObj
+      value: 
+      objectReference: {fileID: 215892751}
     - target: {fileID: 5101607957295703451, guid: 2dfbf23ec932075478899d472c4d8f16, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.012973245
@@ -3092,7 +3100,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-143936
+  m_Name: pb_Mesh-446396
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12575,6 +12583,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &460434587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6896259426868209647, guid: a27151f8482a5c340b78cd5130b47f2a, type: 3}
+  m_PrefabInstance: {fileID: 546533644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &480717409
 Mesh:
   m_ObjectHideFlags: 0
@@ -15660,6 +15673,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CopCarMoving
       objectReference: {fileID: 0}
+    - target: {fileID: 4202285192719229575, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
+      propertyPath: deathObj
+      value: 
+      objectReference: {fileID: 460434587}
+    - target: {fileID: 4202285192719229575, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
+      propertyPath: playerObj
+      value: 
+      objectReference: {fileID: 215892751}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
 --- !u!1001 &645046969
@@ -25664,6 +25685,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CopCarMoving (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4202285192719229575, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
+      propertyPath: deathObj
+      value: 
+      objectReference: {fileID: 460434587}
+    - target: {fileID: 4202285192719229575, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
+      propertyPath: playerObj
+      value: 
+      objectReference: {fileID: 215892751}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a923a81e36bcc458169d71448d54d3, type: 3}
 --- !u!1001 &1154020761
