@@ -37,10 +37,11 @@ Action               | Keyboard Control  |
 ---                  |---                |
 Movement             | WASD              |
 Sprint               | Shift             |
-Basic Slash Attack   | Left mouse click  | 
 Jump                 | Space             | 
+Slide                | Ctrl              | 
 Pause                | Esc               |
-Slide                | Ctrl              |
+Basic Slash Attack   | Left mouse click  |
+
 
 
 ### Debug tools/controls
