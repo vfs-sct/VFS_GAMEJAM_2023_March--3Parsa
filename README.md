@@ -43,18 +43,13 @@ Pause                | Esc               |
 Basic Slash Attack   | Left mouse click  |
 
 
-
-### Debug tools/controls
-
-Use the <key> to open the menu
-
-1. Press <button> to <trigger behaviour>
-
-
 ### Known Issues
 
 * <CAVEATS: KNOWN THINGS TO NOT DO, CRASH BUGS>
 
+-Jumping ontop of dead enemies make you float in the air
+-Certain soundfiles play multiple times and unintended sounds
+-Hitting Esc to unpause the game disables UI
 
 TEAM:
 
