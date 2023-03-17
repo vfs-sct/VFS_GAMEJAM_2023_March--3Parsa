@@ -62,8 +62,8 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnFire(InputValue value)
     {
-        _characterMovement.CanMove = false;
-        _animator.applyRootMotion = true;
+    //    _characterMovement.CanMove = false;
+    //    _animator.applyRootMotion = true;
 
         OnAttack.Invoke();
 

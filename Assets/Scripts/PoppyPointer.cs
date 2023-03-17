@@ -19,8 +19,8 @@ public class PoppyPointer : MonoBehaviour
     }
     private void Update()
     {
-            FindNearestFlower();
-        RotateArrow(_nearestPoppy);
+        FindNearestFlower();
+        //RotateArrow(_nearestPoppy);
         if(_poppyLeftInScene.Length <=0) Arrow.gameObject.SetActive(false);
     }
 

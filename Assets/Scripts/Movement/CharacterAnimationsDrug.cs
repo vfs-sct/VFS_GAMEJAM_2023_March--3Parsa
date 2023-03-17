@@ -44,7 +44,7 @@ public class CharacterAnimationsDrug : MonoBehaviour
     //Anim Events
     void OnAnimationEnd()
     {
-        _animator.applyRootMotion = false;
-        _characterMovement.CanMove = true;
+    //    _animator.applyRootMotion = false;
+    //    _characterMovement.CanMove = true;
     }
 }
