@@ -14,21 +14,24 @@ public class PlayerControllerDrug : MonoBehaviour
     public UnityEvent OnGetDamaged;
     public UnityEvent OnAttack; 
     public UnityEvent OnFlowerPickUp;
+
     // initial cursor state
     [SerializeField] protected CursorLockMode _cursorMode = CursorLockMode.Locked;
     // make character look in Camera direction instead of MoveDirection
     [SerializeField] protected bool _lookInCameraDirection;
+
     public GameObject _hatchet;
+    public bool IsAlive = true;
+    public LayerMask _enemyLayer;
+    public LayerMask _flowerLayer;
+    public int playerHealth = 3;
+    public float attackRange = 2f;
+
     protected Vector2 _moveInput;
     protected CharacterMovementBaseDrug _characterMovement;
     private Animator _animator;
     private PoppyPointer Pointer => GetComponent<PoppyPointer>();
-    public bool IsAlive = true;
     private GameObject _target;
-    private float attackRange = 2f;
-    public LayerMask _enemyLayer;
-    public LayerMask _flowerLayer;
-    public int playerHealth = 3;
     private int highInt;
 
     protected virtual void Awake()
@@ -61,8 +64,9 @@ public class PlayerControllerDrug : MonoBehaviour
     {
         _characterMovement.CanMove = false;
         _animator.applyRootMotion = true;
+
         OnAttack.Invoke();
-        //_hatchet.GetComponent<Collider>().isTrigger = true;
+
         _animator.SetTrigger("Attack");
     }
 
@@ -86,8 +90,8 @@ public class PlayerControllerDrug : MonoBehaviour
     {
         if (_characterMovement == null) return;
         if (playerHealth <= 0) OnDeath.Invoke();
-        // find correct right/forward directions based on main camera rotation
         Pointer.FindNearestFlower();
+        // find correct right/forward directions based on main camera rotation
         Vector3 up = Vector3.up;
         Vector3 right = Camera.main.transform.right;
         Vector3 forward = Vector3.Cross(right, up);
@@ -102,13 +106,13 @@ public class PlayerControllerDrug : MonoBehaviour
     //checks to see if the interaction volume is overlapping on a poppy flower
     private void OnTriggerEnter(Collider other)
     {
+        //Checks for poppy in interaction volume
         if(other.gameObject.TryGetComponent(out PoppyFlower poppyFlower))
         {
-            //other.gameObject.SetActive(false);
-            Destroy(other.gameObject);
-            _animator.SetTrigger("PickUpFlower");
             OnFlowerPickUp.Invoke();
+            _animator.SetTrigger("PickUpFlower");
         }
+        //checks if it is an NPC in the interaction volume
         if(other.gameObject.TryGetComponent(out NpcController npc))
         {
             highInt = Random.Range(1, 5);

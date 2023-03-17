@@ -1,3 +1,4 @@
+using Sirenix.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,29 +11,59 @@ public class PoppyPointer : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] public PoppyFlower[] _poppyLeftInScene;
 
-    [SerializeField] private PoppyFlower _nearestPoppy { get; set; }
+    public PoppyFlower _nearestPoppy;
     private float _nearestDistance = Mathf.Infinity;
     private void OnValidate()
     {
+        FindPoppyInScene();
     }
     private void Update()
     {
-        _poppyLeftInScene = FindObjectsOfType<PoppyFlower>();
-        if(_nearestPoppy == null) FindNearestFlower();
-        Arrow.transform.LookAt(_nearestPoppy.transform.position);
+            FindNearestFlower();
+        RotateArrow(_nearestPoppy);
+        if(_poppyLeftInScene.Length <=0) Arrow.gameObject.SetActive(false);
     }
 
-    public void FindNearestFlower()
+    public PoppyFlower FindNearestFlower()
     {
-        _poppyLeftInScene = FindObjectsOfType<PoppyFlower>();
+        FindPoppyInScene();
         foreach (PoppyFlower poppy in _poppyLeftInScene)
         {
-            float distance = Vector3.Distance(transform.position, poppy.transform.position);
+            if (poppy.gameObject.activeSelf == false) continue;
+            float distance = DistanceToPoppy(poppy);
             if (distance < _nearestDistance)
             {
                 _nearestDistance = distance;
                 _nearestPoppy = poppy;
             }
+            RotateArrow(poppy);
         }
+        return _nearestPoppy;
+    }
+
+    public PoppyFlower[] FindPoppyInScene()
+    {
+        _poppyLeftInScene = FindObjectsOfType<PoppyFlower>();
+        return _poppyLeftInScene;
+    }
+
+    private float DistanceToPoppy(PoppyFlower poppy)
+    {
+        return Vector3.Distance(transform.position, poppy.transform.position);
+    }
+
+    public void RotateArrow(PoppyFlower poppyFlower)
+    {
+        _nearestPoppy = poppyFlower;
+        Arrow.transform.LookAt(poppyFlower.transform.position);
+        
+    }
+
+    public void OnFlowerPickup()
+    {
+        //Destroy(_nearestPoppy.gameObject);
+        _nearestPoppy.gameObject.SetActive(false);
+        _poppyLeftInScene = FindPoppyInScene();
+        _nearestPoppy = FindNearestFlower();
     }
 }

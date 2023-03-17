@@ -214,15 +214,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.161945
+      value: -2.0527883
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000000059604645
+      value: 0.20752335
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8513205
+      value: 10.420048
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -230,15 +230,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -251,6 +251,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6803169544883306252, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38361335
+      objectReference: {fileID: 0}
+    - target: {fileID: -6803169544883306252, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.39750534
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff98e8a8f01bb2047bcb5f2ae8a7b4f0, type: 3}
       propertyPath: m_Name
@@ -429,6 +437,18 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 962873020410349436}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 296825604}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
@@ -489,9 +509,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnGetDamaged:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 1346507497809888906}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -502,9 +519,15 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
+  OnGetDamaged:
+    m_PersistentCalls:
+      m_Calls: []
   OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFlowerPickUp:
     m_PersistentCalls:
       m_Calls: []
   _cursorMode: 1
@@ -518,6 +541,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   playerHealth: 1
+  attackRange: 2
   _maxRange: 10
   _minRange: 1
   _enemyMovement: {fileID: 296825600}
@@ -565,6 +589,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnJump:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLanded:
     m_PersistentCalls:
       m_Calls: []
 --- !u!195 &296825601
