@@ -12,14 +12,17 @@ public class PlayerControllerDrug : MonoBehaviour
 {
     public UnityEvent OnDeath;
     public UnityEvent OnGetDamaged;
+    public UnityEvent OnAttack; 
+    public UnityEvent OnFlowerPickUp;
     // initial cursor state
     [SerializeField] protected CursorLockMode _cursorMode = CursorLockMode.Locked;
     // make character look in Camera direction instead of MoveDirection
     [SerializeField] protected bool _lookInCameraDirection;
     public GameObject _hatchet;
-    protected CharacterMovementBaseDrug _characterMovement;
     protected Vector2 _moveInput;
+    protected CharacterMovementBaseDrug _characterMovement;
     private Animator _animator;
+    private PoppyPointer Pointer => GetComponent<PoppyPointer>();
     public bool IsAlive = true;
     private GameObject _target;
     private float attackRange = 2f;
@@ -56,10 +59,11 @@ public class PlayerControllerDrug : MonoBehaviour
 
     public virtual void OnFire(InputValue value)
     {
-            _characterMovement.CanMove = false;
-            _animator.applyRootMotion = true;
-            //_hatchet.GetComponent<Collider>().isTrigger = true;
-            _animator.SetTrigger("Attack");
+        _characterMovement.CanMove = false;
+        _animator.applyRootMotion = true;
+        OnAttack.Invoke();
+        //_hatchet.GetComponent<Collider>().isTrigger = true;
+        _animator.SetTrigger("Attack");
     }
 
     //these are animation events set on the actual attach animation
@@ -83,6 +87,7 @@ public class PlayerControllerDrug : MonoBehaviour
         if (_characterMovement == null) return;
         if (playerHealth <= 0) OnDeath.Invoke();
         // find correct right/forward directions based on main camera rotation
+        Pointer.FindNearestFlower();
         Vector3 up = Vector3.up;
         Vector3 right = Camera.main.transform.right;
         Vector3 forward = Vector3.Cross(right, up);
@@ -99,8 +104,10 @@ public class PlayerControllerDrug : MonoBehaviour
     {
         if(other.gameObject.TryGetComponent(out PoppyFlower poppyFlower))
         {
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             _animator.SetTrigger("PickUpFlower");
-            other.gameObject.SetActive(false);
+            OnFlowerPickUp.Invoke();
         }
         if(other.gameObject.TryGetComponent(out NpcController npc))
         {

@@ -7,13 +7,13 @@ public class CharacterAnimationsDrug : MonoBehaviour
 {
     // damping time smooths rapidly changing values sent to animator
     [SerializeField] protected float _dampTime = 0.1f;
-    public UnityEvent OnAttack;
+    
     protected Animator _animator;
     protected CharacterMovementBaseDrug _characterMovement;
     protected PlayerControllerDrug _playerController;
     protected GameObject _hatchet { get; private set; }
 
-    [SerializeField] private Collider _hatchetCollider;
+    private Collider _hatchetCollider;
 
     protected virtual void Awake()
     {
@@ -39,7 +39,7 @@ public class CharacterAnimationsDrug : MonoBehaviour
     //Anim Events
     void OnAnimationStart()
     {
-        OnAttack.Invoke();
+
     }
     //Anim Events
     void OnAnimationEnd()

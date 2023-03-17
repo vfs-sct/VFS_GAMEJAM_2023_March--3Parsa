@@ -15,6 +15,7 @@ namespace CharacterMovement
     {
         public UnityEvent OnSlide;
         public UnityEvent OnJump;
+        public UnityEvent OnLanded;
         // public-read private-set properties
         public override Vector3 Velocity { get => _rigidbody.velocity; protected set => _rigidbody.velocity = value; }
 
@@ -27,7 +28,7 @@ namespace CharacterMovement
         protected NavMeshAgent _navMeshAgent;
         private Vector3 _dashDirection;
         private float _dashSpeedMultiplier = 500f;
-
+        
         protected virtual void Awake()
         {
             Speed = _walkSpeed;
@@ -210,7 +211,7 @@ namespace CharacterMovement
                 GroundNormal = hitInfo.normal;
                 LastGroundedPosition = transform.position;
                 SurfaceObject = hitInfo.collider.gameObject;
-                jumpCounter = 1;
+                jumpCounter = 1;                
                 return true;
             }
 
@@ -225,8 +226,8 @@ namespace CharacterMovement
             Vector3 point = collision.contacts[0].point;
             if(Vector3.Distance(point, transform.position) < landingCollisionMaxDistance)
             {
-                GetComponent<FMODUnity.StudioEventEmitter>().Play();
                 OnGrounded.Invoke(collision.gameObject);
+                //GetComponent<FMODUnity.StudioEventEmitter>().Play();
             }
         }
 

@@ -24,13 +24,6 @@
       "dependencies": {},
       "hash": "e7316de682838eacf731fac78299051a3594f27d"
     },
-    "com.qhenshaw.fmodextensions": {
-      "version": "https://github.com/qhenshaw/FMODExtensions.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "f9d6a64ecbdfb75e9b3415bea63f45af5af5c0e8"
-    },
     "com.qhenshaw.gameevents": {
       "version": "https://github.com/qhenshaw/GameEvents.git",
       "depth": 0,

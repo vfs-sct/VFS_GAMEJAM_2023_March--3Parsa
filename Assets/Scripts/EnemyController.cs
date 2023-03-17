@@ -20,14 +20,14 @@ public class EnemyController : PlayerControllerDrug
 
     private void OnValidate()
     {
-        FindPlayer();        
+        UpdateComponents();        
     }
     public override void Update()
     {
         DistanceCheck(_player.transform.position);
         MoveToPlayerPosition(_player.transform.position);
     }
-    private void FindPlayer()
+    private void UpdateComponents()
     {
         _enemyMovement = GetComponent<CharacterMovementBaseDrug>();
         _navMeshAgent = GetComponent<NavMeshAgent>();         

@@ -2,7 +2,6 @@
   "dependencies": {
     "com.qhenshaw.charactermovement": "https://github.com/qhenshaw/CharacterMovement.git",
     "com.qhenshaw.editortools": "https://github.com/qhenshaw/EditorTools.git",
-    "com.qhenshaw.fmodextensions": "https://github.com/qhenshaw/FMODExtensions.git",
     "com.qhenshaw.gameevents": "https://github.com/qhenshaw/GameEvents.git",
     "com.qhenshaw.localmultiplayer": "https://github.com/qhenshaw/LocalMultiplayer.git",
     "com.qhenshaw.rendererfeatures": "https://github.com/qhenshaw/RendererFeatures.git",
