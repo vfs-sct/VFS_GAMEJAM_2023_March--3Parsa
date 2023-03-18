@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public GameObject deathObj;
     public GameObject playerObj;
 
-    [SerializeField] Text countdownText;
+    public static Text countdownText;
 
     // public int scene;   // for scene... Remove when isAlive is present
 
