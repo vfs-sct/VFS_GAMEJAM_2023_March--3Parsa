@@ -14,5 +14,11 @@ public class TimeRemaining : MonoBehaviour
         finalTime = Timer.countdownText;
         finalTime = GetComponent<Text>();
     }
+
+    void Update()
+    {
+        currentTime -= 1 * Time.deltaTime;
+        Timer.countdownText.text = "Time: " + currentTime.ToString("0");
+    }
 }
 
