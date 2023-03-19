@@ -1001,6 +1001,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5833714258184549947}
     m_Modifications:
+    - target: {fileID: 2763270184560834311, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 58.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763270184560834311, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763270185163667579, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 2763270185163667579, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810487069444262, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1009,10 +1025,34 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 8265810487336531107, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 8265810487336531107, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810487587401358, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1068201557725650518}
+    - target: {fileID: 8265810488105657224, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 56.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265810488105657224, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265810488230155727, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 8265810488230155727, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810488683409178, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_Name
       value: DeadUI
@@ -1084,6 +1124,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5833714258184549947}
     m_Modifications:
+    - target: {fileID: 2763270184560834311, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 56.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763270185163667579, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 2763270185163667579, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810487069444261, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1915.2114
@@ -1122,8 +1174,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8265810487069444262, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8265810487336531107, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 8265810487336531107, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810487587401358, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1132,6 +1192,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Gameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 8265810488105657224, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 56.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265810488105657224, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265810488230155727, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
+    - target: {fileID: 8265810488230155727, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2051128314578399638, guid: d7cca0ca68d8f344f87e61d9ea2658b4, type: 2}
     - target: {fileID: 8265810488683409178, guid: 4cc2afb695e5d6843aa0b22aca4ac291, type: 3}
       propertyPath: m_Name
       value: WinUI
